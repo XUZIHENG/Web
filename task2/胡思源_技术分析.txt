@@ -1,0 +1,19 @@
+技术分析
+前端技术分析：
+	HTML/XHTML,CSS,javascript
+	前端框架：Jquery，Bootstrap
+	对于可能加入考虑的用户三维建模，使用three.js框架
+
+后端技术分析：
+	python，java，scala
+	后端框架：Django
+
+功能模块：
+	搭配系统：根据用户特征辅助用户进行服装搭配
+	推荐系统；根据用户特征向用户推荐服装
+
+模块技术分析：
+	搭配系统：使用condition random field算法，对服装库进行分析，构建graphical model。根据用户体型，偏向等因素建立feature function，计算不同服装搭配方案的clique potential。
+	推荐系统：对搭配系统产生的标记序列进行排序，并加入上一轮的购买记录对用户偏好进行修正学习，将最好结果推荐给用户。
+
+	机器学习框架：CRF++
