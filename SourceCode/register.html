@@ -11,18 +11,19 @@
 <link href="css/style.css" rel='stylesheet' type='text/css' />
 <!-- Custom Theme files -->
 <!--webfont-->
-<link href='http://fonts.useso.com/css?family=Lato:100,200,300,400,500,600,700,800,900' rel='stylesheet' type='text/css'>
+<!--link href='http://fonts.useso.com/css?family=Lato:100,200,300,400,500,600,700,800,900' rel='stylesheet' type='text/css'-->
 <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
 <!-- start menu -->
 <link href="css/megamenu.css" rel="stylesheet" type="text/css" media="all" />
 <script type="text/javascript" src="js/megamenu.js"></script>
+<script type="text/javascript" src="js/register.js"></script>
 <script>$(document).ready(function(){$(".megamenu").megamenu();});</script>
 <script>$(document).ready(function(c) {
 	$('.alert-close').on('click', function(c){
 		$('.message').fadeOut('slow', function(c){
 	  		$('.message').remove();
 		});
-	});	  
+	});
 });
 </script>
 <script>$(document).ready(function(c) {
@@ -30,7 +31,7 @@
 		$('.message1').fadeOut('slow', function(c){
 	  		$('.message1').remove();
 		});
-	});	  
+	});
 });
 </script>
 </head>
@@ -57,8 +58,8 @@
 										<li><a href="men.html">针织衫</a></li>
 										<li><a href="men.html">皮革</a></li>
 										<li><a href="men.html">长袖T恤</a></li>
-									</ul>	
-								</div>							
+									</ul>
+								</div>
 							</div>
 							<div class="col1">
 								<div class="h_nav">
@@ -73,8 +74,8 @@
 										<li><a href="men.html">T恤</a></li>
 										<li><a href="men.html">内衣</a></li>
 										<li><a href="men.html">汗衫</a></li>
-									</ul>	
-								</div>							
+									</ul>
+								</div>
 							</div>
 							<div class="col1">
 								<div class="h_nav">
@@ -89,8 +90,8 @@
 										<li><a href="men.html">Paul Smith</a></li>
 										<li><a href="men.html">Ray-Ban</a></li>
 										<li><a href="men.html">Wood Wood</a></li>
-									</ul>	
-								</div>												
+									</ul>
+								</div>
 							</div>
 						  </div>
 						</div>
@@ -110,8 +111,8 @@
 										<li><a href="men.html">针织衫</a></li>
 										<li><a href="men.html">皮革</a></li>
 										<li><a href="men.html">长袖T恤</a></li>
-									</ul>	
-								</div>							
+									</ul>
+								</div>
 							</div>
 							<div class="col1">
 								<div class="h_nav">
@@ -126,8 +127,8 @@
 										<li><a href="men.html">T恤</a></li>
 										<li><a href="men.html">内衣</a></li>
 										<li><a href="men.html">汗衫</a></li>
-									</ul>	
-								</div>							
+									</ul>
+								</div>
 							</div>
 							<div class="col1">
 								<div class="h_nav">
@@ -142,15 +143,15 @@
 										<li><a href="men.html">Paul Smith</a></li>
 										<li><a href="men.html">Ray-Ban</a></li>
 										<li><a href="men.html">Wood Wood</a></li>
-									</ul>	
-								</div>												
+									</ul>
+								</div>
 							</div>
 						  </div>
 						</div>
 			    </li>
-				<li><a class="color4" href="about.html">关于</a></li>				
+				<li><a class="color4" href="about.html">关于</a></li>
 				<li><a class="color6" href="contact.html">支持</a></li>
-			  </ul> 
+			  </ul>
 			</div>
 		</div>
 	    <div class="col-xs-3 header-bottom-right">
@@ -161,7 +162,7 @@
 						  <div class="shopping_cart">
 							  <div class="cart_box">
 							   	 <div class="message">
-							   	     <div class="alert-close"> </div> 
+							   	     <div class="alert-close"> </div>
 					                <div class="list_img"><img src="images/14.jpg" class="img-responsive" alt=""/></div>
 								    <div class="list_desc"><h4><a href="#">衣服1</a></h4>1 x<span class="actual">
 		                             ¥150.00</span></div>
@@ -170,7 +171,7 @@
 	                            </div>
 	                            <div class="cart_box1">
 								  <div class="message1">
-							   	     <div class="alert-close1"> </div> 
+							   	     <div class="alert-close1"> </div>
 					                <div class="list_img"><img src="images/15.jpg" class="img-responsive" alt=""/></div>
 								    <div class="list_desc"><h4><a href="#">衣服2</a></h4>1 x<span class="actual">
 		                             ¥150.00</span></div>
@@ -192,7 +193,7 @@
 						</ul>
 					 </li>
 		      </ul>
-              <div class="search">	  
+              <div class="search">
 				<input type="text" name="s" class="textbox" value="搜索" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Search';}">
 				<input type="submit" value="Subscribe" id="submit" name="submit">
 				<div id="response"> </div>
@@ -203,22 +204,18 @@
 	 </div>
 </div>
 <div class="single_top">
-	 <div class="container"> 
+	 <div class="container">
 	     <div class="register">
-		  	  <form> 
+		  	  <form>
 				 <div class="register-top-grid">
 					<h3>个人信息</h3>
 					 <div>
-						<span>姓<label>*</label></span>
-						<input type="text"> 
-					 </div>
-					 <div>
-						<span>名<label>*</label></span>
-						<input type="text"> 
+						<span>姓名<label>*</label></span>
+						<input type="text" id="name">
 					 </div>
 					 <div>
 						 <span>邮箱<label>*</label></span>
-						 <input type="text"> 
+						 <input type="text" id="email">
 					 </div>
 					 <div class="clearfix"> </div>
 					   <a class="news-letter" href="#">
@@ -229,11 +226,11 @@
 						    <h3>登录信息</h3>
 							 <div>
 								<span>密码<label>*</label></span>
-								<input type="text">
+								<input type="password" id="password">
 							 </div>
 							 <div>
 								<span>确认密码<label>*</label></span>
-								<input type="text">
+								<input type="password" id="repassword">
 							 </div>
 							 <div class="clearfix"> </div>
 					 </div>
@@ -241,13 +238,13 @@
 				<div class="clearfix"> </div>
 				<div class="register-but">
 				   <form>
-					   <input type="submit" value="提交">
+					   <button type="button" id="register">提交</button>
 					   <div class="clearfix"> </div>
 				   </form>
 				</div>
 		   </div>
      </div>
-</div>      
+</div>
 <div class="footer">
 	<div class="container">
 	   <div class="footer_top">
@@ -296,4 +293,4 @@
 	</div>
 </div>
 </body>
-</html>		
+</html>
